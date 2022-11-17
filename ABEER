@@ -1,0 +1,117 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner ENTER = new Scanner(System.in);
+        int x =1;
+        while (x!=0){
+            System.out.println("Choose an opreation from the list or 0 to quite :");
+            System.out.println("1 : sum tow numbers ");
+            System.out.println("2 : subtract tow numbers ");
+            System.out.println("3 : multy tow numbers ");
+            System.out.println("4 : div tow numbers ");
+            System.out.println("5 : find max of three numbers ");
+            System.out.println("6 : find mini of three numbers");
+            System.out.println("7 : average of three numbers");
+             x = ENTER.nextInt();
+            switch (x) {
+                case 1 : sum();
+                break;
+                case 2 : sub();
+                break;
+                case 3 : mult();
+                break;
+                case 4 : div();
+                break;
+                case 5 : max();
+                break;
+                case 6 : mini();
+                break;
+                case 7 : ave();
+
+            }
+
+
+        }
+    }
+    public static void sum(){
+        Scanner ENTER = new Scanner(System.in);
+        System.out.println(" first number : ");
+        int r = ENTER.nextInt();
+        System.out.println("secund number : ");
+        int s =ENTER.nextInt();
+        int sum = r+s;
+        System.out.println("the result is : " + sum);
+    }
+    public static void sub(){
+        Scanner ENTER = new Scanner(System.in);
+        System.out.println(" first number : ");
+        int z = ENTER.nextInt();
+        System.out.println("secund number : ");
+        int q = ENTER.nextInt();
+        int subt = z -q;
+        System.out.println("the result is : " + subt);
+
+    }
+    public static void mult(){
+        Scanner ENTER = new Scanner(System.in);
+        System.out.println(" first number : ");
+        int a = ENTER.nextInt();
+        System.out.println("secund number : ");
+        int b = ENTER.nextInt();
+        int pro = a*b;
+        System.out.println("the result is : " + pro);
+    }
+    public static void div(){
+        Scanner ENTER = new Scanner(System.in);
+        System.out.println(" first number : ");
+        int p = ENTER.nextInt();
+        System.out.println("secund number : ");
+        int l = ENTER.nextInt();
+        int divied = p/l;
+        System.out.println("the result is : " + divied);
+    }
+    public static void max(){
+        Scanner ENTER = new Scanner(System.in);
+        System.out.println("ENTER THE fir NUMBER ");
+        int a = ENTER.nextInt();
+        System.out.println("ENTER THE sec NUMBER ");
+        int b = ENTER.nextInt();
+        System.out.println("ENTER THE thi NUMBER ");
+        int c = ENTER.nextInt();
+        if (a> b && a> c){
+            System.out.println(" th maximum is " + a);
+        } else if (b>c && b>a) {
+            System.out.println(" the maximum is " + b);
+        }
+    }
+    public static void mini(){
+        Scanner ENTER = new Scanner(System.in);
+        System.out.println("ENTER THE fir NUMBER ");
+        int a = ENTER.nextInt();
+        System.out.println("ENTER THE sec NUMBER ");
+        int b = ENTER.nextInt();
+        System.out.println("ENTER THE thi NUMBER ");
+        int c = ENTER.nextInt();
+        if (a< b && a< c){
+            System.out.println(" th mini is " + a);
+        } else if (b<c && b<a) {
+            System.out.println(" the mini is " + b);
+        }
+    }
+    public static void ave(){
+        Scanner ENTER = new Scanner(System.in);
+        System.out.println("ENTER THE fir NUMBER ");
+        int a = ENTER.nextInt();
+        System.out.println("ENTER THE sec NUMBER ");
+        int b = ENTER.nextInt();
+        System.out.println("ENTER THE thi NUMBER ");
+        int c = ENTER.nextInt();
+        int avrege = (a + b + c)/3;
+        System.out.println("the average is : " + avrege);
+
+
+    }
+
+
+}
